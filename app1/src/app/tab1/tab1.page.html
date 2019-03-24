@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Current Weather
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  
+    <ion-list lines="none">
+      <ion-list-header color="secondary">
+          
+        <ion-label>Current Conditions for {{data.name}}</ion-label>
+      </ion-list-header>
+      <ion-item >
+          <ion-avatar>
+              <img src="/assets/img/temperature.png">
+            </ion-avatar>
+        <ion-label>  Current Temperature: {{data.main.temp}} K</ion-label>
+      </ion-item>
+      <ion-item >
+          <ion-avatar>
+              <img src="/assets/img/wind.png">
+            </ion-avatar>
+        <ion-label>  Wind: {{data.wind.speed}} m/s {{data.wind.deg}} degrees</ion-label>
+      </ion-item>
+      <ion-item >
+          <ion-avatar>
+              <img src="/assets/img/pressure.png">
+            </ion-avatar>
+        <ion-label>  Pressure: {{data.main.pressure}} Pa</ion-label>
+      </ion-item>
+      <ion-item >
+          <ion-avatar>
+              <img src="/assets/img/humidity.png">
+            </ion-avatar>
+        <ion-label>  Humidity: {{data.main.humidity}} %</ion-label>
+      </ion-item>
+     
+    </ion-list>
+</ion-content>

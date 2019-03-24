@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid >
+    <ion-row>
+      <ion-col width-100>
+        <ion-list >
+          <form>
+            <ion-item>
+              <ion-label position="floating">
+                Enter City name:
+              </ion-label>
+              <ion-input placeholder="First letter capital rest all small" name="city" type="text" [(ngModel)]="inputValue1"></ion-input>
+            </ion-item>
+            <ion-item>
+            <ion-label position="floating">
+              Enter Country code:
+            </ion-label>
+            <ion-input placeholder="IN/US/UK or country code according to  ISO 3166" name="cid" type="text" [(ngModel)]="inputValue2"></ion-input>
+          </ion-item>
+            <ion-button (click)="onclick(inputValue1,inputValue2)" block color="secondary" size="small">Search location</ion-button>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
